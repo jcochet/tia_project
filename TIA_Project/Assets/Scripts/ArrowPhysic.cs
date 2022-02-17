@@ -17,13 +17,17 @@ public class ArrowPhysic : MonoBehaviour
 
     /* Rigidbody */
     private Rigidbody rb;
+    /* Script gérant le score */
+    private ScoreManager scoreManager;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.AddForce(force * transform.forward);
         Destroy(gameObject, lifeTime);
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
+
     public void OnCollisionEnter(Collision collision)
     {
         if(targets.Contains(collision.gameObject.tag))
@@ -31,6 +35,10 @@ public class ArrowPhysic : MonoBehaviour
             Debug.Log("touché");
             rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints.FreezeAll;
+            if(scoreManager != null)
+            {
+                scoreManager.AddPoints(100);
+            }
         }
     }
 
