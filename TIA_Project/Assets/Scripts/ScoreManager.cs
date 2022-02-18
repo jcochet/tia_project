@@ -4,20 +4,18 @@ using UnityEngine;
 using TMPro;
 
 /**
- * Objet gérant le score du jeu
+ * Script gérant le score du jeu
  * @author Julien Cochet
  */
 public class ScoreManager : MonoBehaviour
 {
+    /* Texte affichant le score */
+    public TextMeshProUGUI scoreText;
+    /* Texte affichant le score final */
+    public TextMeshProUGUI finalScoreText;
+
     /* Score de la partie */
     private int score = 0;
-    /* Texte affichant le score */
-    private TextMeshProUGUI textMeshPro;
-
-    public void Start()
-    {
-        textMeshPro = gameObject.GetComponent<TextMeshProUGUI>();
-    }
 
     /**
      * Ajoute des points au score
@@ -34,6 +32,7 @@ public class ScoreManager : MonoBehaviour
      */
     private void ShowScore()
     {
-        textMeshPro.text = "Score: " + score;
+        scoreText.text = "Score: " + score;
+        finalScoreText.text = "Final Score:\n" + score;
     }
 }

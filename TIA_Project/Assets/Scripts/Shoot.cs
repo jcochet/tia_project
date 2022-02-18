@@ -13,17 +13,28 @@ public class Shoot : MonoBehaviour
     /* Transform d'image traget */
     public Transform imageTarget;
 
+    /* Script gérant le score */
+    private TimerManager timerManager;
+
+    public void Start()
+    {
+        timerManager = FindObjectOfType<TimerManager>();
+    }
+
     public void Update()
     {
-        Fire();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Fire();
+        }
     }
 
     /**
-     * Tire une flèche quand la touche "Fire1" est bassée
+     * Tire une flèche si une partie est en cours
      */
     private void Fire()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (timerManager != null && timerManager.GetGameOn())
         {
             GameObject instance = Instantiate(arrow, this.transform);
             instance.transform.parent = imageTarget;
