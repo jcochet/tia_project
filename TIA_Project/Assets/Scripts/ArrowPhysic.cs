@@ -9,11 +9,11 @@ using UnityEngine;
 public class ArrowPhysic : MonoBehaviour
 {
     /* Force de l'objet */
-    public float force = 150.0f;
+    public float force = 50.0f;
     /* Temps, en secondes, avant la destruction de l'objet */
     public float lifeTime = 30.0f;
     /* Liste des objects cibles */
-    public HashSet<string> targets = new HashSet<string> { "Target" };
+    public HashSet<string> targets = new HashSet<string> { "Target", "Ground" };
 
     /* Rigidbody */
     private Rigidbody rb;
@@ -32,11 +32,12 @@ public class ArrowPhysic : MonoBehaviour
     {
         if(targets.Contains(collision.gameObject.tag))
         {
-            Debug.Log("touché");
             rb.isKinematic = true;
             rb.constraints = RigidbodyConstraints.FreezeAll;
-            if(scoreManager != null)
+            GetComponent<BoxCollider>().enabled = false;
+            if(scoreManager != null && collision.gameObject.tag == "Target")
             {
+                Debug.Log("Touché !");
                 scoreManager.AddPoints(100);
             }
         }

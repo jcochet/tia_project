@@ -53,6 +53,10 @@ public class TimerManager : MonoBehaviour
      */
     public void StartGame()
     {
+        ArrowPhysic[] arrows = FindObjectsOfType<ArrowPhysic>();
+        foreach(ArrowPhysic arrow in arrows) {
+            Destroy(arrow.gameObject);
+        }
         timeLeft = initialTime;
         menu.SetActive(false);
         gameHUD.SetActive(true);
