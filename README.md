@@ -9,3 +9,11 @@ On trouvait ici l'écran où se déroule le jeu. Le but étant de tirer sur une 
 ### Édition du terrain
 ![concept_sketch_1.jpg](https://github.com/jcochet/tia_project/blob/main/img/concept_sketch_1.jpg)
 Sur l'édition du terrain il n'aurait pas été possible de tirer, mais des éléments de décor (arbres, murs, etc.) auraient été plaçables, déplaçables et supprimables. Il aurait aussi été possible de retourner à l'créan de jeu.
+## Fonctionnalités implémentées
+Dans cette section, nous allons revenir sur ce qui a été effectivement implémenté, en reprémant les huits demandés par le sujet.
+### Terrain de jeu virtuel
+![virtual_playground.jpg](https://github.com/jcochet/tia_project/blob/main/img/virtual_playground.jpg)
+En posant la carte "Drone", trois cubes apparaisent, ceux-ci font office de terrain de jeu virtuel.
+### Manipulation d'objets virtuels
+![virtual_objects_manipulation.gif](https://github.com/jcochet/tia_project/blob/main/img/virtual_objects_manipulation.gif)
+S'il n'y pas de partie démarrée, les trois cubes précédement évoqués sont déplaçables en un simple drag & drop sur l'écran du téléphone.
