@@ -14,6 +14,7 @@ ABABOU Sarah & COCHET Julien - M2 Info IL
     7. [Informations affichées une fois le jeu fini](#finished)
     8. [Application Android](#android)
 3. [Manuel d'utilisation](#manual)
+4. [Projet Unity](#unity)
 ## Conception et fonctionnalités envisagées <a name="design"></a>
 Le sujet nous proposait de créer un jeu parmis deux options : une course d'obstacle ou une machine de Rube Goldberg. Avec l'aval du professeur, nous avons finalement décidé de créer notre propore jeu : un **jeu de tir à l'arc**.
 
@@ -66,3 +67,16 @@ L'entièreté du jeu est disponible sous le forme d'un apk. Celui-ci est disponi
 Vous trouverez ci-dessous une vidéo montrant le déroulement du jeu :
 
 https://user-images.githubusercontent.com/45289115/155973114-44a11ab3-ec08-40f4-8fcb-811b9a60813b.mp4
+
+### Projet Unity <a name="unity"></a>
+Le projet utilise la version 2020.3.30f1 de Unity.
+Les packages utilisés sont :
+* Vuforia Engine AR - Version 10.5.5
+* JetBrains Rider Editor - Version 2.0.7
+* Test Framework - Version 1.1.31
+* TextMeshPro - Version 3.0.6
+* Timeline - Version 1.4.8
+* Unity UI - Version 1.0.0
+* Version Control - Version 1.15.13
+* Visual Studio Code Editor - Version 1.2.5
+* Visual Studio Editor 2.0.14
