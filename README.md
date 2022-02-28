@@ -16,26 +16,26 @@ ABABOU Sarah & COCHET Julien - M2 Info IL
 3. [Manuel d'utilisation](#manual)
 4. [Projet Unity](#unity)
 ## Conception et fonctionnalités envisagées <a name="design"></a>
-Le sujet nous proposait de créer un jeu parmis deux options : une course d'obstacle ou une machine de Rube Goldberg. Avec l'aval du professeur, nous avons finalement décidé de créer notre propore jeu : un **jeu de tir à l'arc**.
+Le sujet nous proposait de créer un jeu parmi deux options : une course d'obstacle ou une machine de Rube Goldberg. Avec l'aval du professeur, nous avons finalement décidé de créer notre propre jeu : un **jeu de tir à l'arc**.
 
 Nous avons réfléchis aux fonctionnalités à implémenter et avons dessiner les différentes interfaces associées. Celles-ci étaient au nombre de deux, nous les détaillons ci-dessous.
 ### Écran de jeu <a name="gamescreen"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/concept_sketch_0.jpg" alt="concept_sketch_0.jpg" width="50%">
-On trouvait ici l'écran où se déroule le jeu. Le but étant de tirer sur une cible virtuelle attachée à une carte AR. Toucher la cible augmentait le score du joueur et viser à côté faisait planter la flèche dans le sol. Un viseur au centre de l'écran (désactivé en mode difficile) permetterait au joueur de savoir s'il toucherait ou non la cible. La puissance du tir aurait été ajustable en appuyant plus ou moins longtemps sur l'écran. Les boutons en bas de l'écran auraient permis de basculer sur l'édition de terrain ou de mettre le jeu en pause.
+On trouvait ici l'écran où se déroule le jeu. Le but étant de tirer sur une cible virtuelle attachée à une carte AR. Toucher la cible augmentait le score du joueur et viser à côté faisait planter la flèche dans le sol. Un viseur au centre de l'écran (désactivé en mode difficile) permettrait au joueur de savoir s'il toucherait ou non la cible. La puissance du tir aurait été ajustable en appuyant plus ou moins longtemps sur l'écran. Les boutons en bas de l'écran auraient permis de basculer sur l'édition de terrain ou de mettre le jeu en pause.
 
 ### Édition du terrain <a name="fieldeditor"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/concept_sketch_1.jpg" alt="concept_sketch_1.jpg" width="50%">
 Sur l'édition du terrain, il n'aurait pas été possible de tirer, mais des éléments de décor (arbres, murs, etc.) auraient été plaçables, déplaçables et supprimables. Il aurait aussi été possible de retourner à l'écran de jeu.
 
 ## Fonctionnalités implémentées <a name="features"></a>
-Dans cette section, nous allons revenir sur ce qui a été effectivement implémenté, en reprenant les huits points demandés par le sujet.
+Dans cette section, nous allons revenir sur ce qui a été effectivement implémenté, en reprenant les huit points demandés par le sujet.
 ### Terrain de jeu virtuel <a name="playground"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/virtual_playground.jpg" alt="virtual_playground.jpg" width="50%">
-En posant la carte "Drone", trois cubes apparaisent, ceux-ci font office de terrain de jeu virtuel.
+En posant la carte "Drone", trois cubes apparaissent, ceux-ci font office de terrain de jeu virtuel.
 
 ### Manipulation d'objets virtuels <a name="manipulation"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/virtual_objects_manipulation.gif" alt="virtual_objects_manipulation.gif" width="50%">
-S'il n'y pas de partie démarrée, les trois cubes précédement évoqués sont déplaçables en un simple drag & drop sur l'écran du téléphone.
+S'il n'y pas de partie démarrée, les trois cubes précédemment évoqués sont déplaçables en un simple drag & drop sur l'écran du téléphone.
 
 ### Mode facile <a name="easy"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/easy_mode.gif" alt="easy_mode.gif" width="50%">
@@ -43,7 +43,7 @@ Au cours d'une partie, un viseur au centre de l'écran permet de voir si la cibl
 
 ### Objet relié à une carte AR <a name="armarker"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/object_controlled_by_ar_marker.jpg" alt="object_controlled_by_ar_marker.jpg" width="50%">
-En posant la carte "Astronaut", une cible apparait. Celle-ci ne peut pas être déplacée au sein du jeu, elle sera toujours juste au dessus de la carte.
+En posant la carte "Astronaut", une cible apparaît. Celle-ci ne peut pas être déplacée au sein du jeu, elle sera toujours juste au dessus de la carte.
 
 ### Interaction avec un objet réel <a name="real"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/real_object_interaction.gif" alt="real_object_interaction.gif" width="50%">
@@ -55,7 +55,7 @@ L'application démarre sur un écran ayant un bouton "Start" pour commencer le j
 
 ### Informations affichées une fois le jeu fini <a name="finished"></a>
 <img src="https://github.com/jcochet/tia_project/blob/main/img/game_finished.jpg" alt="game_finished.jpg" width="50%">
-Lorqu'une partie est finie, le score du joueur est affiché.
+Lorsqu’une partie est finie, le score du joueur est affiché.
 
 ### Application Android <a name="android"></a>
 L'entièreté du jeu est disponible sous le forme d'un apk. Celui-ci est disponible dans les [releases de ce git](https://github.com/jcochet/tia_project/releases).
