@@ -58,7 +58,7 @@ L'application démarre sur un écran ayant un bouton "Start" pour commencer le j
 Lorsqu’une partie est finie, le score du joueur est affiché.
 
 ### Application Android <a name="android"></a>
-L'entièreté du jeu est disponible sous le forme d'un apk. Celui-ci est disponible dans les [releases de ce git](https://github.com/jcochet/tia_project/releases).
+L'entièreté du jeu est disponible sous le forme d'un apk. Celui-ci est disponible à la [racine du projet](https://github.com/jcochet/tia_project/blob/main/tia_project.apk).
 ## Manuel d'utilisation <a name="manual"></a>
 * Lancer l'application et mettre en place une **carte "Astronaut"** et une **carte "Drone"**. Vous pouvez déplacer les cubes si vous le souhaitez.
 * Lancer le jeu en appuyant sur le **bouton "Start"**. Vous disposer de 30 secondes pour faire le meilleur score possible. Vous marquez 100 points à chaque fois que vous touchez la cible avec une flèche. **Pour tirer, touchez n'importe quel partie de l'écran.** Le viseur est désactivable en décochant la case "Easy Mode".
