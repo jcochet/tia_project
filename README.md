@@ -1,6 +1,6 @@
 # Projet TIA
 ABABOU Sarah & COCHET Julien - M2 Info IL
-# Table des matières
+## Table des matières
 1. [Conception et fonctionnalités envisagées](#design)
     1. [Écran de jeu](#gamescreen)
     2. [Édition du terrain](#fieldeditor)
@@ -68,7 +68,7 @@ Vous trouverez ci-dessous une vidéo montrant le déroulement du jeu :
 
 https://user-images.githubusercontent.com/45289115/155973114-44a11ab3-ec08-40f4-8fcb-811b9a60813b.mp4
 
-### Projet Unity <a name="unity"></a>
+## Projet Unity <a name="unity"></a>
 Le projet utilise la version 2020.3.30f1 de Unity.
 Les packages utilisés sont :
 * Vuforia Engine AR - Version 10.5.5
